@@ -1,0 +1,659 @@
+:root {
+    --black-color: #171725;
+    --orange-color: #ff7400;
+}
+
+html *:not(i) {
+    font-family: "Quicksand";
+}
+
+a {
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.258);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7e84a38f;
+    border-radius: 10px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7e84a3ab;
+
+}
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:active {
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.export-all-sel:focus,
+.export-all-sel:active {
+    box-shadow: none;
+}
+
+.btn-outline-info:hover {
+    background: white;
+}
+
+.search-feild-icon {
+    background-color: white;
+}
+
+.tbl-search-feild {
+    border-left: none;
+    border-color: #ced4da;
+}
+
+.tbl-search-feild:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #ced4da;
+}
+
+.btn-outline-info {
+    border-color: #add8e68a;
+    color: #2b4852a3;
+}
+
+#leads .puglin-data-table .btn:hover {
+    color: var(--orange-color) !important;
+}
+
+@media(min-width:993px) {
+    .aside {
+        transform: translateX(0);
+    }
+}
+
+header {
+    height: 4.3rem;
+    padding: 0.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 99999;
+}
+
+header .img-btn {
+    width: 3.1rem;
+    height: 3.1rem;
+    padding: 0.7rem;
+    transform: scale(0.70);
+
+}
+
+header .dark-mode {
+    background: white;
+}
+
+aside {
+    --bg-aside-color-used: F5FAFD;
+    position: fixed;
+    top: 4.3rem;
+    height: calc(100vh - 4.3rem);
+    width: 15.6rem;
+    background-color: white;
+    overflow: auto;
+    z-index: 999999;
+}
+
+
+aside .profile-img {
+    padding: 0.7rem;
+    text-align: center;
+
+}
+
+aside .profile-img figure,
+#profile .profile-img figure {
+    width: 7.9rem;
+    height: 7.9rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+    margin-inline: auto;
+}
+
+aside .profile-img figure img,
+#profile .profile-img figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+aside .aside-menu1 {
+    text-align: center;
+}
+
+aside .aside-menu1 li {
+    display: inline;
+}
+
+
+aside .aside-menu1 li .aside-menu1-link {
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+    color: var(--orange-color);
+    transition: all 120ms ease;
+}
+
+aside .aside-menu1 li .aside-menu1-link:hover {
+    color: #e16621;
+}
+
+aside .app-link-wrapper li {
+    border: none;
+    background-color: var(--bg-aside-color-used);
+}
+
+aside .app-link-wrapper li a {
+    color: black;
+}
+
+aside .app-link-wrapper .list-group {
+    background-color: var(--bg-aside-color-used);
+}
+
+aside .accordion-item {
+    border: none;
+}
+
+aside li:has(.accordion-item) {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+aside .accordion-button {
+    background-color: white;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+aside .accordion-button:focus {
+    box-shadow: none;
+}
+
+aside .logout {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: var(--black-color);
+    padding: 0.6rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+aside .logout a {
+    color: white;
+}
+
+
+main {
+    max-width: 100vw;
+    min-height: 100vh;
+    background: #f1f6f8;
+
+}
+
+.page-content {
+    padding: calc(70px + 12px) 12px 12px calc(250px + 12px);
+}
+
+.component-content {
+    background: white;
+    padding: 1.8rem 0.3rem 0.3rem 0.3rem;
+    border-radius: 0.3rem;
+}
+
+#dashboard .dashboard-card {
+    max-width: 100%;
+    height: 15.31rem;
+    border-bottom-left-radius: calc(0.375rem - 1px);
+    border-bottom-right-radius: calc(0.375rem - 1px);
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 1.06rem;
+    margin-bottom: 1.26rem;
+}
+
+
+#dashboard {
+    --account-sec-bg: #F4FAFF;
+}
+
+#dashboard .dashboard-card a {
+    color: white;
+}
+
+#dashboard .dashboard-card a,
+#dashboard .dashboard-card p {
+    z-index: 5;
+    position: relative;
+}
+
+#dashboard .card-verlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000073;
+}
+
+#dashboard .dashboard-card figure {
+    width: 100%;
+    height: 100%;
+}
+
+#dashboard .dashboard-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#dashboard .dashboard-card .upgrade-now-btn {
+    position: absolute;
+    right: 1.06rem;
+    bottom: 1.06rem;
+}
+
+#dashboard .dashboard-card h2 {
+    font-weight: bold;
+}
+
+#dashboard .dashboard-yellow {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background: linear-gradient(95deg, rgba(255, 116, 0, 1) 17%, rgba(255, 116, 0, 1) 67%, rgba(73, 18, 255, 1) 97%);
+
+}
+
+#dashboard .dashboard-blue {
+    background: linear-gradient(95deg, rgba(18, 138, 255, 1) 17%, rgba(73, 18, 255, 1) 97%);
+    color: white;
+    position: relative;
+}
+
+#dashboard .dashboard-blue img {
+    position: absolute;
+    left: 222px;
+    bottom: 49%;
+    width: 119px;
+    height: 118px;
+    top: 30%;
+}
+
+#dashboard .dashboard-card .inner-sec-left {
+    width: 7.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard .dashboard-card .inner-sec-right {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard .dashboard-card .inner-card {
+    background: linear-gradient(13deg, rgba(255, 116, 0, 1) 17%, rgba(255, 0, 0, 1) 67%, rgba(255, 116, 0, 1) 97%);
+    padding: 0.8rem 0.8rem 0rem 0.8rem;
+    border-radius: 0.5rem;
+    color: white;
+    height: 9rem;
+}
+
+#dashboard .dashboard-card .inner-img-sec {
+    margin-top: 0.9rem;
+    color: white;
+}
+
+
+#dashboard .account-sec .account-card {
+    background: var(--account-sec-bg);
+    padding: 0.9rem 1rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.9rem;
+    align-items: center;
+}
+
+#dashboard .account-sec .account-card p {
+    margin-bottom: 0;
+}
+
+#dashboard .account-sec .account-card i {
+    font-size: 1.6rem;
+    color: #a1aab1;
+}
+
+#dashboard .account-sec .icon-wrapper {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    /* border: thin solid; */
+    text-align: center;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard .account-card-right {
+    background: var(--account-sec-bg);
+    padding: 1.9rem 2rem;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+#dashboard .icon-wrapper-right {
+    position: absolute;
+    top: 1.9rem;
+    right: 2rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+    font-size: 2rem;
+    /* padding-inline-start: 1.5rem; */
+    float: right;
+}
+
+#dashboard .icon-wrapper-right i {
+    color: #c7b1b1;
+}
+
+#dashboard .integration {
+    padding: 1.9rem 2rem;
+    background: var(--account-sec-bg);
+    border-radius: 0.3rem;
+    background: linear-gradient(95deg, rgb(245 242 242) 8%, rgb(223 219 233) 50%, rgba(244, 242, 246, 1) 59%);
+
+}
+
+#dashboard .integration .integration-text {
+    flex: 1;
+}
+
+#dashboard .integration-2 {
+    background: rgb(245 242 242);
+}
+
+#dashboard .integration .integration-icon-wrapper {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+
+}
+
+.active-li {
+    background-color: var(--black-color) !important;
+    color: white;
+}
+
+aside .active-li a {
+    color: white !important;
+}
+
+#profile .profile-info-sec {
+    margin-top: 3.5rem;
+}
+
+#profile .profile-img {
+    margin-top: -1rem;
+}
+
+#profile .profile-img img {
+    margin-top: -0.40rem;
+}
+
+#profile .input-plus-icons {
+    position: relative;
+}
+
+#profile .input-plus-icons .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: thin solid transparent;
+}
+
+#profile .input-plus-icons .form-control:hover {
+    border-bottom-color: lightblue;
+}
+
+#profile .input-plus-icons:hover i.fa {
+    visibility: visible;
+}
+
+#profile .input-plus-icons i {
+    position: absolute;
+    left: -0.8rem;
+    right: 0;
+    top: 2.5rem;
+    color: lightblue;
+    visibility: hidden;
+}
+
+
+#profile .input-plus-icons .form-control:focus {
+    box-shadow: none;
+}
+
+#profile .name-feild-wrapper .form-control {
+    font-size: 1.5rem;
+    margin-left: -.75rem;
+}
+
+#profile .name-feild-wrapper i {
+    top: 0.9rem;
+    left: -1.5rem;
+    ;
+}
+
+#profile .profile-card-wrapper {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+#profile .profile-card-wrapper .card {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#profile .profile-card-wrapper .card .free-card-footer {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-weight: bold;
+}
+
+#profile .profile-download-card {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#profile .profile-download-card .card:not(.not-gradient) {
+    background-image: linear-gradient(90deg, #ffffff, #f7f6f9, #eeeef2, #e5e5ec, #dcdde6, #dcdde6, #dcdde6, #dcdde6, #e5e5ec, #eeeef2, #f7f6f9, #ffffff)
+}
+
+#profile .profile-download-card .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--bs-dark);
+}
+
+/* large screen  */
+@media(max-width:992px) {
+    header .logo-wrapper {
+        width: 105px;
+        height: 44px;
+    }
+
+    header .logo-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .toggle-aside {
+        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @keyframes slide-right {
+        0% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+
+        }
+    }
+
+    aside {
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @keyframes slide-left {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+
+        }
+
+        100% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+    .page-content {
+        padding-left: 12px;
+    }
+
+    #dashboard .account-sec .account-card {
+        /* flex-direction: column; */
+    }
+
+}
+
+
+/* madium screen  */
+@media(max-width:767px) {}
+
+/* 580px  */
+@media(max-width:580px) {
+    header .logo-wrapper img {
+        width: 68px;
+        height: 34px;
+    }
+}
+
+/* excepional case  */
+@media(max-width:480px) {
+    header nav button.btn {
+        padding-block: 0.62rem;
+    }
+}
+
+/* small screen  */
+@media(max-width:420px) {
+    header nav button.btn {
+        font-size: 0.7rem;
+        padding: 0.50rem;
+    }
+}
+
+/* dark mode  */
+
+.dark-mode {
+    --dark-mode-main-color: #121111;
+    --dark-mode-text-color: black;
+}
+
+.dark-mode :is(p, a, strong, span, i, div, li) {
+    color: white !important;
+}
+
+.dark-mode .page-content {
+    background: var(--black-color);
+}
+
+.dark-mode .btn {
+    border-color: var(--black-color);
+    background: transparent;
+    transition: all 150ms ease;
+}
+
+.dark-mode .btn:hover {
+    border-bottom: white;
+}
+
+.dark-mode :is(aside, header, main, .component-content) {
+    background-color: var(--dark-mode-main-color);
+}
+
+
+.dark-mode :is(.account-card, .account-card-right) {
+    background: var(--dark-mode-main-color) !important;
+    outline: 5px solid var(--black-color);
+    outline-offset: -3px;
+}
+
+.dark-mode .icon-wrapper {
+    background: white;
+}
+
+.dark-mode :is(.account-sec .account-card, .icon-wrapper-right) i {
+    color: var(--dark-mode-text-color) !important;
+}
+
+.dark-mode .integration:not(.integration-2) {
+    background: linear-gradient(95deg, rgba(13, 47, 69, 1) 28%, rgba(67, 123, 147, 0.7035962700509891) 52%, rgba(244, 242, 246, 1) 73%) !important;
+}
+
+.dark-mode .integration-2 {
+    background: var(--black-color) !important;
+}
+
+.dark-mode .integration i.fa {
+    color: #0000;
+}
+
+.dark-mode :is(.account-card, .account-card-right, .integration) i.fa {
+    color: white !important;
+}
