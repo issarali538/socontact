@@ -514,6 +514,13 @@ aside .active-li a {
     color: var(--bs-dark);
 }
 
+#profile #dropdown-flag{
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* large screen  */
 @media(max-width:992px) {
     header .logo-wrapper {
@@ -656,4 +663,27 @@ aside .active-li a {
 
 .dark-mode :is(.account-card, .account-card-right, .integration) i.fa {
     color: white !important;
+}
+
+.dark-mode .name-feild-wrapper .form-control,
+.dark-mode .input-plus-icons .form-control{
+    background-color: var(--dark-mode-main-color) !important;
+    color: white !important;
+}
+
+.dark-mode .profile-card-wrapper .card .card-body{
+    outline: 0.5rem solid var(--black-color) !important;
+    background: var(--dark-mode-main-color) !important;
+    color: white !important;
+}
+
+.dark-mode .profile-download-card .card,
+.dark-mode .profile-download-card .radio-card, .card{
+    border: 0.5rem solid var(--black-color) !important;
+}
+
+
+.dark-mode .profile-download-card .card-body,
+.dark-mode .profile-download-card .radio-card, .card-body{
+    background: var(--dark-mode-main-color);
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Row, Card,Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import profile from '../../assets/images/profile.jpeg';
+import {languages} from './Lang';
 
 const Profile = () => {
 
@@ -12,9 +13,21 @@ const Profile = () => {
     const [address, setAddress] = useState('Serai Naurang Lakki Marwat');
     const [email, setEmail] = useState('issaralisia@gmail.com');
     const [companyName, setCompanyName] = useState('ABC Company Name');
+    const [flags, setFlags] = useState(languages);
 
-    const handleClick = (clicked) => {
-        setActive(clicked);
+    const handleClick = (clicked)=>{
+        setActive(clicked)
+    }
+   
+    let langHandle = (langid)=>{
+       
+        let selLang = document.querySelector(`.lang-${langid}`);
+        document.querySelectorAll('[class^="lang-"]').forEach(element => {
+            element.classList.remove('active');
+        });
+        document.getElementById('dropdown-flag').innerHTML = selLang.innerHTML;   
+        selLang.classList.add('active');
+           
     }
 
     return (
@@ -89,7 +102,7 @@ const Profile = () => {
                                         <Link to="">
                                              <h3 className="fw-bold">Free</h3>
                                         </Link>
-                                        <div class="free-card-footer">
+                                        <div className="free-card-footer">
                                             2 days ago <i className="fa fa-angle-right"></i>
                                         </div>
                                     </div>
@@ -106,7 +119,7 @@ const Profile = () => {
                                         <h5 className="fw-bold">
                                             Download extension Chrome
                                         </h5>
-                                        <span className="text-primary"><i class="fa-solid fa-square-check"></i></span>
+                                        <span className="text-primary"><i className="fa-solid fa-square-check"></i></span>
                                     </div>
                                 </Card>
                             </div>
@@ -118,7 +131,7 @@ const Profile = () => {
                                         <h5 className="fw-bold">
                                             Download extension Chrome
                                         </h5>
-                                        <span className="text-primary"><i class="fa-solid fa-square-check"></i></span>
+                                        <span className="text-primary"><i className="fa-solid fa-square-check"></i></span>
                                     </div>
                                 </Card>
                             </div>
@@ -130,7 +143,7 @@ const Profile = () => {
                                         <h5 className="fw-bold">
                                             Download extension Chrome
                                         </h5>
-                                        <span style={{color:"lightblue"}}><i class="fa-solid fa-square-check"></i></span>
+                                        <span style={{color:"lightblue"}}><i className="fa-solid fa-square-check"></i></span>
                                     </div>
                                 </Card>
                             </div>
@@ -146,8 +159,8 @@ const Profile = () => {
                                 <Card>
                                     <div className="card-body d-flex justify-content-between align-items-center">
                                         <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="notification" />
+                                        <div className="form-check form-switch">
+                                            <input className="form-check-input" type="checkbox" id="notification" />
                                         </div>
                                     </div>
                                 </Card>
@@ -158,8 +171,8 @@ const Profile = () => {
                                 <Card>
                                     <div className="card-body d-flex justify-content-between align-items-center">
                                         <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="notification" checked={true} />
+                                        <div className="form-check form-switch">
+                                            <input className="form-check-input" type="checkbox" id="notification" checked={true} />
                                         </div>
                                     </div>
                                 </Card>
@@ -170,8 +183,8 @@ const Profile = () => {
                                 <Card>
                                     <div className="card-body d-flex justify-content-between align-items-center">
                                         <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="notification"/> 
+                                        <div className="form-check form-switch">
+                                            <input className="form-check-input" type="checkbox" id="notification"/> 
                                         </div>
                                     </div>
                                 </Card>
@@ -188,18 +201,25 @@ const Profile = () => {
                                 <Card className="bg-light">
                                     <div className="card-body d-flex justify-content-between align-items-center">
                                         <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                        <div class="flags-btn-dropdown">
+                                        <div className="flags-btn-dropdown">
                                         <Dropdown>
-                                            <Dropdown.Toggle variant="info" id="dropdown-basic">
+                                            <Dropdown.Toggle variant="info" id="dropdown-flag">
                                                 <i className="fa fa-flag me-2"></i>Change Language
                                             </Dropdown.Toggle>
 
                                             <Dropdown.Menu>
                                               
                                                     <div style={{width:"12rem"}}>
-                                                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+
+                                                            {flags.map(f=>(
+                                                        <Dropdown.Item className={`lang-${f.id}`} key={f.id} href="#/action-1" onClick={()=>langHandle(f.id)}>
+                                                            <div className="flag-lang">
+                                                                <img className="me-3" src={f.img} alt="flags" />
+                                                                <span>{f.country}</span>
+                                                            </div>
+                                                        </Dropdown.Item>
+                                                            ))}
+
                                                     </div>
                                                
                                             </Dropdown.Menu>
