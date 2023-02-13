@@ -42,11 +42,11 @@ const Dashboard = () => {
                                             <div className="inner-card">
                                                 <div className="inner-img-sec">
                                                     <span className="fs-2">
-                                                        <i class="fa-solid fa-sim-card"></i>
+                                                        <i className="fa-solid fa-sim-card"></i>
                                                     </span>
                                                     <span className="fs-2 float-end">
-                                                        <i class="fa-regular fa-circle"></i>
-                                                        <i class="fa-regular fa-circle" style={{ marginLeft: '-0.9rem' }}></i>
+                                                        <i className="fa-regular fa-circle"></i>
+                                                        <i className="fa-regular fa-circle" style={{ marginLeft: '-0.9rem' }}></i>
                                                     </span>
                                                 </div>
                                                 <p className="text-center fs-3 mb-0">**** **** **** **** <span>||||</span></p>
@@ -87,7 +87,7 @@ const Dashboard = () => {
                                 <div className="col-12">
                                     <div className="d-flex account-card">
                                         <div className="icon-wrapper">
-                                        <i class="fa-solid fa-calendar"></i>
+                                        <i className="fa-solid fa-calendar"></i>
                                         </div>
                                         <div className="ps-3" style={{flex:1}}>
                                             <p className="mb-2">Task</p>
@@ -104,7 +104,7 @@ const Dashboard = () => {
                                 <div className="col-12">
                                     <div className="d-flex account-card">
                                         <div className="icon-wrapper">
-                                        <i class="fa-solid fa-users"></i>
+                                        <i className="fa-solid fa-users"></i>
                                         </div>
                                         <div className="ps-3" style={{flex:1}}>
                                             <p className="mb-2">Task</p>
@@ -126,7 +126,7 @@ const Dashboard = () => {
                                 <div className="card-right-text">
                                     <h5 className="mb-3">Sponser</h5>
                                     <div className="icon-wrapper-right">
-                                        <i class="fa-regular float-end fa-handshake"></i>
+                                        <i className="fa-regular float-end fa-handshake"></i>
                                     </div>
                                     <p>LoremLoremLoremLorem<br/>LoremLoremLorem</p>
                                 </div>                                
@@ -143,7 +143,7 @@ const Dashboard = () => {
                         <div className="col-12">
                             <div className="integration d-flex mb-3">
                                 <div className="integration-icon-wrapper me-3">
-                                <i class="fa-solid fa-earth-europe"></i>
+                                <i className="fa-solid fa-earth-europe"></i>
                                 </div>
                                 <div className="integration-text">
                                     <h5>Integration SaleForce</h5>
@@ -155,7 +155,7 @@ const Dashboard = () => {
                         <div className="col-12">
                             <div className="integration integration-2 d-flex mb-3">
                                 <div className="integration-icon-wrapper me-3">
-                                <i class="fa-solid fa-earth-europe"></i>
+                                <i className="fa-solid fa-earth-europe"></i>
                                 </div>
                                 <div className="integration-text">
                                     <h5>Integration Hubspots</h5>

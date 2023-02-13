@@ -11,21 +11,14 @@ import Services from './Comps/Services/Service';
 import Package from './Comps/Package/Package';
 import Leads from './Comps/Leads/Leads';
 import Profile from './Comps/Profile/Profile';
+import Team from './Comps/Team/Team';
 
 const App = () => {
-
-  
-  function togglDarkMode (){
-    document.getElementById('page-wrapper').classList.toggle('dark-mode');
-  }
-
-
   
   return (
-    
     <div id="page-wrapper">
       <BrowserRouter>
-        <Header togglDarkMode={togglDarkMode} />
+        <Header />
         <Aside />
         <MainCont>
           <div className='page-content'>
@@ -35,6 +28,7 @@ const App = () => {
               <Route path="/package" element={<Package />} />
               <Route path="/leads" element={<Leads />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/team" element={<Team />} />
             </Routes>
           </div>
         </MainCont>

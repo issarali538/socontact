@@ -72,7 +72,7 @@ const Leads = () => {
                                 <div className="search-input-wrapper">
                                     <div className="input-group mb-3">
                                         <span className="input-group-text search-feild-icon text-muted">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            <i className="fa-solid fa-magnifying-glass"></i>
                                         </span>
                                         <input type="text" onChange={e => setSearch(e.target.value)} value={search} id="search" className="form-control tbl-search-feild" placeholder="Search..." aria-label="search" aria-describedby="basic-addon1" />
                                     </div>

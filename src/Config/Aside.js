@@ -54,6 +54,9 @@ const Aside = () => {
                     <li className={`list-group-item  ${(active === "profile") ? "active-li" : ""}`}>
                         <Link exact to='/profile' onClick={() => handleClick('profile')}> Profile </Link>
                     </li>
+                    <li className={`list-group-item  ${(active === "team") ? "active-li" : ""}`}>
+                        <Link exact to='/team' onClick={() => handleClick('team')}> Team </Link>
+                    </li>
                     <li className="list-group-item">
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">

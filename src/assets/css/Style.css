@@ -97,7 +97,7 @@ header .img-btn {
 
 }
 
-header .dark-mode {
+header .dark-theme {
     background: white;
 }
 
@@ -499,7 +499,7 @@ aside .active-li a {
 
 #profile .profile-download-card {
     margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1.2rem;
 }
 
 #profile .profile-download-card .card:not(.not-gradient) {
@@ -607,83 +607,114 @@ aside .active-li a {
 
 /* dark mode  */
 
-.dark-mode {
-    --dark-mode-main-color: #121111;
-    --dark-mode-text-color: black;
+.dark-theme {
+    --black-color: #121111;
+    --dark-theme-text-color: black;
+    --dark-theme-dark-lighter:#201e1e;
 }
 
-.dark-mode :is(p, a, strong, span, i, div, li) {
+.dark-theme .page-content{
+    background: var(--dark-theme-dark-lighter) !important;
+}
+
+.dark-theme :is(p, a, strong, span, i, div, li, button) {
     color: white !important;
 }
 
-.dark-mode .page-content {
+.dark-theme .btn{
+    border:thin solid var(--dark-theme-dark-lighter) !important;
+}
+
+.dark-theme .page-content {
     background: var(--black-color);
 }
 
-.dark-mode .btn {
+.dark-theme .btn {
     border-color: var(--black-color);
     background: transparent;
     transition: all 150ms ease;
+    
 }
 
-.dark-mode .btn:hover {
+.dark-theme .dropdown-item:hover{
+    color: var(--black-color);
+    background: var(--black-color);
+}
+
+
+.dark-theme .dropdown-menu{
+    background: var(--black-color) !important;
+    column-rule: white !important;
+}
+
+.dark-theme .btn:hover {
     border-bottom: white;
 }
 
-.dark-mode :is(aside, header, main, .component-content) {
-    background-color: var(--dark-mode-main-color);
+.dark-theme .btn-warning{
+    background: white !important;
+    color: black !important;
+}
+
+.dark-theme :is(aside, header, main, .component-content) {
+    background-color: var(--black-color) !important;
 }
 
 
-.dark-mode :is(.account-card, .account-card-right) {
-    background: var(--dark-mode-main-color) !important;
+.dark-theme :is(.account-card, .account-card-right) {
+    background: var(--dark-theme-main-color) !important;
     outline: 5px solid var(--black-color);
     outline-offset: -3px;
 }
 
-.dark-mode .icon-wrapper {
+.dark-theme .icon-wrapper {
     background: white;
 }
 
-.dark-mode :is(.account-sec .account-card, .icon-wrapper-right) i {
-    color: var(--dark-mode-text-color) !important;
+.dark-theme :is(.account-sec .account-card, .icon-wrapper-right) i {
+    color: var(--dark-theme-text-color) !important;
 }
 
-.dark-mode .integration:not(.integration-2) {
+.dark-theme .integration:not(.integration-2) {
     background: linear-gradient(95deg, rgba(13, 47, 69, 1) 28%, rgba(67, 123, 147, 0.7035962700509891) 52%, rgba(244, 242, 246, 1) 73%) !important;
 }
 
-.dark-mode .integration-2 {
+.dark-theme .integration-2 {
     background: var(--black-color) !important;
 }
 
-.dark-mode .integration i.fa {
+.dark-theme .integration i.fa {
     color: #0000;
 }
 
-.dark-mode :is(.account-card, .account-card-right, .integration) i.fa {
+.dark-theme :is(.account-card, .account-card-right, .integration) i.fa {
     color: white !important;
 }
 
-.dark-mode .name-feild-wrapper .form-control,
-.dark-mode .input-plus-icons .form-control{
-    background-color: var(--dark-mode-main-color) !important;
+.dark-theme .name-feild-wrapper .form-control,
+.dark-theme .input-plus-icons .form-control{
+    background-color: var(--dark-theme-main-color) !important;
     color: white !important;
 }
 
-.dark-mode .profile-card-wrapper .card .card-body{
-    outline: 0.5rem solid var(--black-color) !important;
-    background: var(--dark-mode-main-color) !important;
+.dark-theme .profile-card-wrapper .card .card-body{
+    outline: 0.5rem solid var(--dark-theme-dark-lighter) !important;
+    background: var(--black-color) !important;
     color: white !important;
 }
 
-.dark-mode .profile-download-card .card,
-.dark-mode .profile-download-card .radio-card, .card{
-    border: 0.5rem solid var(--black-color) !important;
+
+
+.dark-theme .profile-download-card .card{
+    background: var(--black-color) !important;
+    outline:3px solid var(--dark-theme-dark-lighter) !important;
 }
 
+.dark-theme .radio-card .card-body{
+    background: var(--black-color) !important;
+    outline: 3px solid var(--dark-theme-dark-lighter);
+}
 
-.dark-mode .profile-download-card .card-body,
-.dark-mode .profile-download-card .radio-card, .card-body{
-    background: var(--dark-mode-main-color);
+.dark-theme .integration-2{
+    border: 2px solid var(--dark-theme-dark-lighter);
 }

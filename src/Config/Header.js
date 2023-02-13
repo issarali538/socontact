@@ -1,13 +1,24 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import logo from '../assets/images/logo.png';
 import btnimg from '../assets/images/btn-img.png';
 
 
 
-const Header = ({togglDarkMode}) => {
+const Header = () => {
+
+    const [theme, setTheme ] = useState('light-mode');
+
+    const togglDarkMode = ()=>{
+        if(theme !== 'dark-theme'){setTheme('dark-theme')}else{setTheme('light-theme')};
+    }
+
     const toggleAside = ()=>{
         document.querySelector('aside').classList.toggle('toggle-aside');
     }
+
+    useEffect(()=>{
+        document.body.className = theme;
+    },[theme])
 
     return (
         <header>
@@ -25,16 +36,16 @@ const Header = ({togglDarkMode}) => {
                 </div>
                 <div className='col-9 col-lg-8'>
                     <nav className='text-end'>
-                            <button className='btn text-muted me-2' onClick={()=>togglDarkMode(true)}>
-                            <i class="fa-regular fa-moon"></i>
+                            <button className='btn text-muted me-2' onClick={()=>togglDarkMode()}>
+                            <i className="fa-regular fa-moon"></i>
                             <span className='d-none d-md-inline'>dark mode</span>
                             </button>
                             <button className='btn btn-primary me-2'>
-                            <i class="fa-solid fa-gift me-2"></i>
+                            <i className="fa-solid fa-gift me-2"></i>
                             Earn Credit
                             </button>
                             <button className='btn btn-primary'>
-                            <i class="fa-solid fa-gift me-2"></i>
+                            <i className="fa-solid fa-gift me-2"></i>
                                  0 Credits
                             </button>
                     </nav>
