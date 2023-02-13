@@ -10,6 +10,14 @@ const Team = () => {
                             <button className="btn btn-warning">Team</button>
                          </div>
                     </Row>
+                    <Row>
+                        <div className="col-lg-7">
+                            <Row>
+                                
+                            </Row>
+                        </div>
+                        <div className="col-lg-5"></div>
+                    </Row>
                 </Container>
             </div>
         </div>
