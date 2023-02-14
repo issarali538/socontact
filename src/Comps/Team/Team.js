@@ -1,8 +1,27 @@
+import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import TeamCard from "./TeamCard";
+import TeamMembers from "./TeamMembers";
+import MemberProfile from "./MemberProfile";
 
 const Team = () => {
+
+    const [cardData, setCardData] = useState([
+        {
+            "heading" : 'total task achieved',
+            "number" : 12,
+            "card_profit" : 1.8
+        },
+        {
+            "heading" : 'Team Credit',
+            "number" : 10,
+            "card_profit" : 1.3
+        },
+    ])
+
+
     return (
-        <div className="dash-panel component">
+        
             <div className="component-content" id="team">
                 <Container>
                     <Row>
@@ -10,17 +29,24 @@ const Team = () => {
                             <button className="btn btn-warning">Team</button>
                          </div>
                     </Row>
-                    <Row>
+                    <Row className="team-card-wrapper">
                         <div className="col-lg-7">
-                            <Row>
-                                
-                            </Row>
+                            <div className="">
+                                <Row>
+                                     <TeamCard cardData={cardData} />
+                                </Row>
+                            </div>
+                          
+                                <TeamMembers/>
+                            
                         </div>
-                        <div className="col-lg-5"></div>
+                        <div className="col-lg-5">
+                            <MemberProfile/>
+                        </div>
                     </Row>
                 </Container>
             </div>
-        </div>
+        
     );
 }
 
