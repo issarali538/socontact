@@ -1,6 +1,15 @@
-:root {
+.light-theme {
     --black-color: #171725;
     --orange-color: #ff7400;
+    --color-white:#F5F6FA;
+    --color-white-1:#E6E9F4;
+}
+
+.dark-theme{
+    --black-color: #354052;
+    --orange-color: #ff7400;
+    --color-white:#f5f6fa4f;
+    --color-white-1:#131523;
 }
 
 html *:not(i) {
@@ -97,8 +106,13 @@ header .img-btn {
 
 }
 
-header .dark-theme {
-    background: white;
+header, aside, .component-content {
+    background: var(--color-white);
+}
+
+.page-content {
+    background:var(--color-white-1) ;
+    padding: calc(70px + 12px) 12px 12px calc(250px + 12px);
 }
 
 aside {
@@ -107,7 +121,6 @@ aside {
     top: 4.3rem;
     height: calc(100vh - 4.3rem);
     width: 15.6rem;
-    background-color: white;
     overflow: auto;
     z-index: 999999;
 }
@@ -211,12 +224,9 @@ main {
 
 }
 
-.page-content {
-    padding: calc(70px + 12px) 12px 12px calc(250px + 12px);
-}
+
 
 .component-content {
-    background: white;
     padding: 1.8rem 0.3rem 0.3rem 0.3rem;
     border-radius: 0.3rem;
     min-height: 100vh;
@@ -544,16 +554,16 @@ aside .active-li a {
 }
 
 #team .new-member{
-    border-left: thin solid #cccdce;
+    border-left: thin solid var(--color-white-1);
     padding-left: 2rem;
 }
 
-#team .edit-member-info-wrapper input{
+#team .edit-member-info-wrapper input:not(input[type='submit']){
     border: none;
     border-bottom: thin solid #cccdce;
     border-radius: 0;
 }
-#team .edit-member-info-wrapper input:focus{
+#team .edit-member-info-wrapper input:focus:input:not(input[type='submit']){
     box-shadow: none;
 }
 
@@ -658,16 +668,14 @@ aside .active-li a {
     color: white !important;
 }
 
-.dark-theme .btn{
-    border:thin solid var(--dark-theme-dark-lighter) !important;
-}
+
 
 .dark-theme .page-content {
     background: var(--black-color);
 }
 
 .dark-theme .btn {
-    border-color: var(--black-color);
+    /* border-color: var(--black-color); */
     background: transparent;
     transition: all 150ms ease;
     
@@ -762,13 +770,16 @@ aside .active-li a {
 .dark-theme #team .card{
     background-color: var(--dark-theme-dark-lighter) !important;
     overflow: hidden !important;
-    border:thin solid var(--orange-color) !important;
+    border:thin solid var(--color-white) !important;
 }
 .dark-theme #team .form-control{
     background: var(--dark-theme-dark-lighter) !important;
 } 
 
 .dark-theme #team .btn{
-    border-color: var(--account-sec-bg) !important;
+    border:thin solid var(--account-sec-bg) !important;
+    background: var(--color-white);
 }
+
+
 

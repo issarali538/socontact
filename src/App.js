@@ -12,6 +12,7 @@ import Package from './Comps/Package/Package';
 import Leads from './Comps/Leads/Leads';
 import Profile from './Comps/Profile/Profile';
 import Team from './Comps/Team/Team';
+import Setting from './Comps/Setting/Setting';
 
 const App = () => {
   
@@ -29,6 +30,7 @@ const App = () => {
               <Route path="/leads" element={<Leads />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/setting" element={<Setting />} />
             </Routes>
           </div>
         </MainCont>

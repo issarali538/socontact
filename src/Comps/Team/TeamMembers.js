@@ -40,7 +40,7 @@ const TeamMembers = () => {
                             <div className="col-sm-12" key={member.mem_name}>
                                 <Card className="border-0 mb-2">
                                     <Card.Body className="d-flex alig-items-center justify-content-between mb-2">
-                                        <div className="avatar d-flex">
+                                        <div className="avatar d-flex align-items-center">
                                             <span className="">
                                                 <img src={member.img_} alt="member" />
                                             </span>
