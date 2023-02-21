@@ -65,6 +65,72 @@ a {
     background-color: white;
 }
 
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 13px;
+    background: linear-gradient(158deg, rgba(0, 88, 255, 1) 50%, rgba(0, 189, 245, 1) 100%);
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
 .tbl-search-feild {
     border-left: none;
     border-color: #ced4da;
@@ -74,6 +140,16 @@ a {
     box-shadow: none;
     outline: none;
     border-color: #ced4da;
+}
+
+.crm-datapicker{
+    /* border-color: var(--dark-theme-dark-lighter); */
+    box-shadow:none;
+    border-radius: 3px;
+}
+
+.crm-datapicker:focus{
+    outline: none;
 }
 
 .btn-outline-info {
@@ -600,7 +676,69 @@ aside .active-li a {
     font-size:2.5rem;
 }
 
+#lead-page-offcanvas{
+    top: 4.3rem;
+    width: 480px;
+}
 
+#lead-page-offcanvas .card{
+    border-color: white;
+}
+
+
+
+#lead-page-offcanvas .offcanvas-active-btn {
+    color: var(--orange-color);
+}
+#lead-page-offcanvas .form-select:focus {
+    box-shadow: none;
+}
+
+#lead-page-offcanvas .btn:has(select):active {
+    background: var(--account-sec-bg);
+}
+
+#lead-page-offcanvas .offcanvas-card span{
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: var(--bs-primary);
+    color: white;
+}
+
+#packages .package-card{
+    background:linear-gradient(158deg, rgba(0, 88, 255, 1) 50%, rgba(0, 189, 245, 1) 100%); 
+    color:white
+}
+
+#packages .package-card-wrapper{
+    padding-top: 3rem;
+}
+
+#packages .package-card-wrapper .card{
+    padding-inline:2rem;
+    box-shadow: #7E84A36F 0px 2px 8px;
+    border:none;
+}
+
+#packages .package-card-wrapper .not-fist-card{
+    margin-top:2.8rem
+}
+
+#packages .best-package{
+    position: relative;
+}
+
+#packages .best-package img{
+    position: absolute;
+    top: -24px;
+    right: 11px;
+    width: 48px;
+    height: 92px;
+}
 
 /* large screen  */
 @media(max-width:992px) {
@@ -728,8 +866,8 @@ aside .active-li a {
     column-rule: white !important;
 }
 
-.dark-theme .btn:hover {
-    border-bottom: white;
+.dark-theme .input-group i{
+    color: var(--dark-theme-dark-lighter) !important;
 }
 
 .dark-theme .btn-warning{
@@ -768,7 +906,7 @@ aside .active-li a {
 }
 
 .dark-theme .integration i.fa {
-    color: #0000;
+    color: #0000 !important;
 }
 
 .dark-theme :is(.account-card, .account-card-right, .integration) i.fa {
@@ -827,9 +965,61 @@ aside .active-li a {
 }
 
 .dark-theme .setting-cards{
-    
     outline: thin solid var(--color-white) !important;
 }
+
+.dark-theme #lead-page-offcanvas .offcanvas-body, 
+.dark-theme #lead-page-offcanvas .sec-1 , 
+.dark-theme #lead-page-offcanvas .sec-2 , 
+.dark-theme #lead-page-offcanvas select , 
+.dark-theme #lead-page-offcanvas .sec-3 , 
+.dark-theme #lead-page-offcanvas .offanvas-content{
+    background-color: var(--dark-theme-dark-lighter) !important;
+}
+
+.dark-theme #lead-page-offcanvas .offcanvas-header{
+    background: var(--dark-theme-dark-lighter);
+}
+.dark-theme #lead-page-offcanvas .offcanvas-header .btn-close{
+    color: var(--orange-color) !important;
+}
+
+.dark-theme #lead-page-offcanvas select{
+    color: var(--account-sec-bg);
+}
+
+.dark-theme #lead-page-offcanvas .sec-2,
+.dark-theme #lead-page-offcanvas .sec-3
+{
+    border-color: var(--dark-theme-dark-lighter) !important;
+} 
+
+.dark-theme #lead-page-offcanvas .btn-outline-primary{
+    border-color: var(--orange-color);
+}
+
+.dark-theme #lead-page-offcanvas .offcanvas-active-btn{
+    border-color: var(--orange-color);
+}
+
+.dark-theme #packages .package-card-wrapper .card{
+    background: var(--dark-theme-dark-lighter);
+}
+
+.dark-theme #packages .best-package{
+    background: var(--orange-color) !important;
+    box-shadow: var(--orange-color) 0px 2px 8px;
+}
+.dark-theme #packages .best-package .btn{
+    border-color: #fff;
+}
+
+.dark-theme #packages .package-card {
+    background: linear-gradient(158deg, var(--orange-color) 50%, #ffffffb8 100%) !important
+    
+}
+
+
 
 
 

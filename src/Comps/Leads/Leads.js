@@ -54,7 +54,7 @@ const Leads = () => {
 
     return (
         <div className="dash-panel component">
-            <div className="component-content" id="leads">
+            <div className="component-content lead-1" id="leads">
                 <Container>
                     <Row>
                         <div className="col-12">
@@ -104,7 +104,7 @@ const Leads = () => {
                             </div>
                         </div>
 
-                        <div className="col-12">
+                        <div className="col-12 mt-3">
                             <div className="puglin-data-table">
                                 <DataTable
                                     title={<h4>Leads 2023</h4>}
