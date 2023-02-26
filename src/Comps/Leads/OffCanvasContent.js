@@ -1,5 +1,6 @@
 import {Card, Row } from "react-bootstrap";
 import {Link} from 'react-router-dom';
+import avatar from '../../assets/images/mem1.jpeg';
 
 const OffCanvasContent = () => {
     return (
@@ -8,7 +9,7 @@ const OffCanvasContent = () => {
                 <Card.Body className="d-flex alig-items-center justify-content-between mb-2">
                     <div className="avatar d-flex align-items-center">
                         <span className="">
-                            <img src="/../../assets/images/mem1.jpeg" alt="socontac member" />
+                            <img src={avatar} alt="socontac member" />
                         </span>
                         <div className="mem-desc ps-3">
                             <p className="fw-bold mb-0">

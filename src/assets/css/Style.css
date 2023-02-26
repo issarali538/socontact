@@ -687,7 +687,8 @@ aside .active-li a {
 
 
 
-#lead-page-offcanvas .offcanvas-active-btn {
+#lead-page-offcanvas .offcanvas-active-btn,
+#mem-lead-info .right-side .tab-btn-active {
     color: var(--orange-color);
 }
 #lead-page-offcanvas .form-select:focus {
@@ -739,6 +740,93 @@ aside .active-li a {
     width: 48px;
     height: 92px;
 }
+
+#billing .billing-content{
+    padding-top: 3rem;
+}
+
+#billing .form-input-wrapper{
+
+    position: relative;
+}
+
+#billing .form-input-wrapper input,
+#billing .form-input-wrapper input:focus,
+#billing .form-input-wrapper input:active{
+    border: none;
+    border-bottom: thin solid lightblue;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+#billing  .form-input-wrapper .fa{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#billing .card-information{
+    border-color: white;
+    background-color: var(--color-white-1);
+}
+
+#billing .billing-card-pic{
+    background-color: var(--orange-color);
+    border: none;
+    padding-top: 1rem;
+    border-radius: 1rem;
+}
+
+#billing .billing-card-pic i{
+    font-size: 2rem;
+}
+
+#mem-lead-info .left-side .card{
+    border: none;
+}
+
+#mem-lead-info .lead-profile-wrapper{
+    padding-top: 4rem;
+}
+
+#mem-lead-info .left-side .card img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+#mem-lead-info .company-information .company-dot{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    background-color: var(--bs-primary);
+}
+#mem-lead-info .right-side .tabs-card{
+    border: none;
+}
+#mem-lead-info .right-side{
+padding-left: 2rem;
+padding-right: 2rem;
+padding-bottom: 2rem;
+padding-top: 2rem;
+border-radius: 0.5rem;
+}
+#mem-lead-info .right-side .list .card img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+#mem-lead-info .right-side .list .card{
+    border: none;
+    border-radius: 0;
+    border-left: 0.3rem solid var(--bs-primary);
+    margin-bottom: 1rem;
+}
+
+
 
 /* large screen  */
 @media(max-width:992px) {
@@ -801,7 +889,11 @@ aside .active-li a {
 
 
 /* madium screen  */
-@media(max-width:767px) {}
+@media(max-width:767px) {
+    #billing .billing-card-pic{
+        margin-inline: auto;
+    }
+}
 
 /* 580px  */
 @media(max-width:580px) {
@@ -941,11 +1033,14 @@ aside .active-li a {
     border: 2px solid var(--dark-theme-dark-lighter);
 }
 
-.dark-theme #team .card{
+.dark-theme #team .card, 
+.dark-theme #mem-lead-info .card{
     background-color: var(--dark-theme-dark-lighter) !important;
     overflow: hidden !important;
     border:thin solid var(--color-white) !important;
 }
+
+
 .dark-theme #team .form-control{
     background: var(--dark-theme-dark-lighter) !important;
 } 
@@ -973,8 +1068,14 @@ aside .active-li a {
 .dark-theme #lead-page-offcanvas .sec-2 , 
 .dark-theme #lead-page-offcanvas select , 
 .dark-theme #lead-page-offcanvas .sec-3 , 
-.dark-theme #lead-page-offcanvas .offanvas-content{
+.dark-theme #lead-page-offcanvas .offanvas-content {
     background-color: var(--dark-theme-dark-lighter) !important;
+}
+
+.dark-theme #mem-lead-info .lead-information select{
+    background-color: var(--black-color) !important;
+    color: white;
+    outline: none !important;
 }
 
 .dark-theme #lead-page-offcanvas .offcanvas-header{
@@ -998,7 +1099,8 @@ aside .active-li a {
     border-color: var(--orange-color);
 }
 
-.dark-theme #lead-page-offcanvas .offcanvas-active-btn{
+.dark-theme #lead-page-offcanvas .offcanvas-active-btn, 
+.dark-theme #mem-lead-info .tab-btn-active{
     border-color: var(--orange-color);
 }
 
@@ -1018,6 +1120,38 @@ aside .active-li a {
     background: linear-gradient(158deg, var(--orange-color) 50%, #ffffffb8 100%) !important
     
 }
+
+.dark-theme #billing .form-card,
+.dark-theme #billing .form-card .card-body{
+    background: var(--black-color);
+}
+.dark-theme #billing .form-card .form-control{
+    background-color: var(--black-color);
+}
+
+.dark-theme #mem-lead-info .right-side .list .card{
+    border-radius: 0 0.4rem 0.4rem 0 ;
+    border-left-color: var(--bs-primary) !important;
+    border-left-width: 0.4rem !important;
+}
+
+.dark-theme #mem-lead-info .right-side .tabs-card{
+    border: none !important;
+}
+.dark-theme #mem-lead-info .right-side{
+    
+    background-color: var(--dark-theme-dark-lighter) !important;
+}
+
+
+
+.dark-theme .rdt_TableRow, .dark-theme .rdt_Pagination,.dark-theme .rdt_TableHeader, .dark-theme .rdt_TableHeadRow {
+    background-color: var(--dark-theme-dark-lighter) !important;
+}
+
+
+
+
 
 
 
