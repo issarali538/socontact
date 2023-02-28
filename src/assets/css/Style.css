@@ -629,7 +629,7 @@ aside .active-li a {
     transition: all 120ms ease;
 }
 
-#team .operations i:hover{
+#team .operations i:hover, #add-task .left-side .card i:hover{
     transform: scale(1.2) rotate(16deg);
     color: #9ea1a5;
 }
@@ -826,7 +826,27 @@ border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
 
+#add-task .left-side .card{
+    border:none;
+    border-left: 1.3rem solid var(--dark-theme-dark-lighter) !important;
+}
 
+#add-task .left-side .card img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100% ;
+}
+
+#add-task .left-side .card a{
+text-decoration: none;
+color: var(--bs-info);
+}
+
+#add-task .left-side .card input[type=checkbox]{
+    width: 1.2rem;
+    height: 1.2rem;
+accent-color: var(--orange-color);
+}
 
 /* large screen  */
 @media(max-width:992px) {

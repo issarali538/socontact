@@ -17,6 +17,7 @@ import Lead1 from './Comps/Leads/Lead1';
 import Lead2 from './Comps/Leads/Lead2';
 import Billing from './Comps/BillingInfo/Billing';
 import MemberList from './Comps/MemberList/MemberList';
+import AddTaskMain from './Comps/AddTask/Main';
 
 const App = () => {
   
@@ -39,6 +40,7 @@ const App = () => {
               <Route path="/lead2" exact element={<Lead2 />} />
               <Route path="/billing" exact element={<Billing />} />
               <Route path="/member-list" exact element={<MemberList />} />
+              <Route path="/add-task" exact element={<AddTaskMain />} />
             </Routes>
           </div>
         </MainCont>

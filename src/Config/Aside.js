@@ -69,6 +69,9 @@ const Aside = () => {
                     <li className={`list-group-item  ${(active === "billing") ? "active-li" : ""}`}>
                         <Link exact to='/billing' onClick={() => handleClick('billing')}> Billing </Link>
                     </li>
+                    <li className={`list-group-item  ${(active === "add-task") ? "active-li" : ""}`}>
+                        <Link exact to='/add-task' onClick={() => handleClick('add-task')}> Add Task </Link>
+                    </li>
                     <li className={`list-group-item  ${(active === "member-list") ? "active-li" : ""}`}>
                         <Link exact to='/member-list' onClick={() => handleClick('member-list')}> Member List </Link>
                     </li>
