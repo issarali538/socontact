@@ -205,20 +205,34 @@ aside {
     z-index: 999999;
 }
 
-
-aside .profile-img {
-    padding: 0.7rem;
-    text-align: center;
-
+aside .aside-wrapper{
+    position: relative;
+    width:100%;
+    height:100%;
 }
 
-aside .profile-img figure,
-#profile .profile-img figure {
-    width: 7.9rem;
-    height: 7.9rem;
-    margin-top: 1.8rem;
-    margin-bottom: 0;
+aside .aside-body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+
+
+aside .profile-img img {
+
+    width: 9rem;
+    height: 9rem;
     margin-inline: auto;
+    margin-top: 5rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+aside .profile-img {
+    text-align: center;
+    padding-bottom: 0.5rem;
 }
 
 aside .profile-img figure img,
@@ -281,6 +295,10 @@ aside .accordion-button:focus {
     box-shadow: none;
 }
 
+aside .collapse {
+    background-color: var(--color-white-1);
+}
+
 aside .logout {
     position: absolute;
     bottom: 0px;
@@ -292,8 +310,18 @@ aside .logout {
     color: white;
 }
 
-aside .logout a {
-    color: white;
+
+
+aside .logout-wrapper{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+aside .logout-wrapper button{
+    width: 100%;
+    border-radius: 0;
+    border-radius: 0;
 }
 
 
@@ -520,11 +548,16 @@ aside .active-li a {
 }
 
 #profile .profile-img {
-    margin-top: -1rem;
+    
+    text-align: center;
 }
 
 #profile .profile-img img {
-    margin-top: -0.40rem;
+    
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 .input-plus-icons {
@@ -829,6 +862,9 @@ border-radius: 0.5rem;
 #add-task .left-side .card{
     border:none;
     border-left: 1.3rem solid var(--dark-theme-dark-lighter) !important;
+    margin-bottom: 0.8rem;
+    background-color: var(--color-white-1);
+    padding:0.5rem 1rem;
 }
 
 #add-task .left-side .card img{
@@ -882,6 +918,33 @@ accent-color: var(--orange-color);
         background:var(--black-color);
         animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+    
+    aside .list-group a{
+        color: white !important;
+
+    }
+
+    aside .list-group li:hover{
+        transition: all 250ms ease;
+    }
+
+    aside .list-group li:hover{
+        background-color: white;
+    }
+    
+    aside .list-group li:hover a{
+        color: var(--black-color) !important;
+    }
+
+    aside .active-li, aside .active-li:hover{
+        background-color: white !important;
+    }
+    
+    aside .active-li a, aside .active-li a:hover{
+        color: black !important;
+
+    }
+
 
     @keyframes slide-left {
         0% {

@@ -50,9 +50,9 @@ const Profile = () => {
                             <Row>
                                 <div className="col-sm-4">
                                     <div className="profile-img">
-                                        <figure>
+                                        
                                             <img src={profile} alt="profile img" />
-                                        </figure>
+                                        
                                         <div>
                                             <p className="text-info mt-2 text-center"><i className="fa fa-pen me-2"></i>Edit Your Profile Pic</p>
                                         </div>
