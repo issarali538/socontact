@@ -6,7 +6,6 @@ import { Outlet, Link } from "react-router-dom";
 const Aside = () => {
 
     const [active, setActive] = useState("dashboard");
-    const [toggleAccordion, setToggleAccordion] = useState(false);
 
     const handleClick = (thisBtn) => {
         setActive(thisBtn);
