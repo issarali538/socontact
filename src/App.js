@@ -18,7 +18,6 @@ import Lead1 from './Comps/Leads/Lead1';
 import Lead2 from './Comps/Leads/Lead2';
 import Billing from './Comps/BillingInfo/Billing';
 import MemberList from './Comps/MemberList/MemberList';
-import AddTaskMain from './Comps/AddTask/Main';
 
 const App = () => {
 

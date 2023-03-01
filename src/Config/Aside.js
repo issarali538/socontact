@@ -78,11 +78,7 @@ const Aside = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='logout-wrapper'>
-                    <Button variant="warning">
-                        <i className='fa fa-angle-left me-2'></i>Logout 
-                    </Button>
-                </div>
+               
             </div>
         </aside>
 
