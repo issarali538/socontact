@@ -56,7 +56,7 @@ const App = () => {
       </div>
 
 
-      <Modal show={show} onHide={handleClose} centered size="lg">
+      <Modal show={show} onHide={handleClose} centered>
           <Modal.Header closeButton>
             <Modal.Title className='fw-bold'>Please!</Modal.Title>
           </Modal.Header>
