@@ -17,11 +17,11 @@ const Setting = () => {
                         <div className="col-12">
                             <Card className="border-0 dark-mode-card-setting">
                                 <Card.Body>
-                                    <button onClick={() => handleClick('profile')} className={`btn me-2 ${(active === "profile") ? "btn-outline-info" : "btn-outline-info"}`}>Profile</button>
+                                    <button onClick={() => handleClick('profile')} className={`btn m-2 ${(active === "profile") ? "btn-outline-info" : "btn-outline-info"}`}>Profile</button>
 
-                                    <button onClick={() => handleClick('integration')} className={`btn me-2 ${(active === "integration") ? "btn-warning" : "btn-outline-info"}`}>Integration</button>
+                                    <button onClick={() => handleClick('integration')} className={`btn m-2 ${(active === "integration") ? "btn-warning" : "btn-outline-info"}`}>Integration</button>
 
-                                    <button onClick={() => handleClick('api')} className={`btn me-2 ${(active === "api") ? "btn-warning" : "btn-outline-info"}`}>API</button>
+                                    <button onClick={() => handleClick('api')} className={`btn m-2 ${(active === "api") ? "btn-warning" : "btn-outline-info"}`}>API</button>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -30,7 +30,7 @@ const Setting = () => {
                                 <Card.Body className="d-flex justify-content-between">
                                     <div>
                                         <Dropdown className="d-inline" offset={offset}>
-                                            <Dropdown.Toggle variant="success" className="filter-btn me-2 btn-outline-info border border-info" id="dropdown-basic">
+                                            <Dropdown.Toggle variant="success" className="filter-btn m-2 btn-outline-info border border-info" id="dropdown-basic">
                                                 <i className="fa fa-filter me-1"></i>Filter
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>
@@ -40,7 +40,7 @@ const Setting = () => {
                                             </Dropdown.Menu>
                                         </Dropdown>
                                         <Dropdown className="d-inline" offset={offset}>
-                                            <Dropdown.Toggle variant="success" className="filter-btn border border-info me-2 btn-outline-light" id="dropdown-basic">
+                                            <Dropdown.Toggle variant="success" className="filter-btn border border-info m-2 btn-outline-light" id="dropdown-basic">
                                                 <i className="fa fa-user me-1"></i>Added By
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>

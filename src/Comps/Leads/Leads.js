@@ -65,8 +65,8 @@ const Leads = () => {
                         <div className="col-12 pt-4">
                             <div className="d-flex justify-content-between">
                                 <div className="btns-wrapper">
-                                    <button className="btn btn-outline-info me-3"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
-                                    <button className="btn btn-outline-info"><i className="fa fa-user me-2"></i>Add By</button>
+                                    <button className="btn btn-outline-info m-2"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
+                                    <button className="btn btn-outline-info m-2"><i className="fa fa-user me-2"></i>Add By</button>
                                 </div>
 
                                 <div className="search-input-wrapper">
@@ -82,16 +82,16 @@ const Leads = () => {
                         <div className="col-12 pt-5">
                             <div className="d-inline">
                             </div>
-                            <div className="d-flex justify-content-between">
-                                <div className="btns-wrapper">
-                                    <h4 className="fw-bold d-inline me-3">1234 Leads</h4>
-                                    <button className="btn btn-outline-info me-3"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
-                                    <button className="btn btn-outline-info"><i className="fa fa-user me-2"></i>Add By</button>
+                            <div className="d-flex justify-content-between flex-column flex-md-row">
+                                <div className="btns-wrapper d-flex d-sm-block flex-column">
+                                    <h4 className="fw-bold d-inline m-3">1234 Leads</h4>
+                                    <button className="btn btn-outline-info m-2"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
+                                    <button className="btn btn-outline-info m-2"><i className="fa fa-user me-2"></i>Add By</button>
                                 </div>
 
                                 <div className="">
                                     <div className="">
-                                        <button className="btn btn-outline-info me-2"><i className="fa fa-table"></i></button>
+                                        <button className="btn btn-outline-info m-2"><i className="fa fa-table"></i></button>
                                         <button className="btn btn-warning">
                                             <select className="form-select form-select-sm border-0 btn-warning export-all-sel">
                                                 <option selected>Export All</option>

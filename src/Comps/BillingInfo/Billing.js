@@ -13,11 +13,11 @@ const Billing = () => {
                     <Container>
                         <Row>
                             <Col sm={12} >
-                                <button onClick={() => setClick('invoice')} className={`btn ${(click === "invoice") ? "btn-warning" : "btn-outline-info"} me-3`}>Invoice</button>
+                                <button onClick={() => setClick('invoice')} className={`btn ${(click === "invoice") ? "btn-warning" : "btn-outline-info"} m-2`}>Invoice</button>
 
-                                <button onClick={() => setClick('information')} className={`btn ${(click === "information") ? "btn-warning" : "btn-outline-info"} me-3`}>Billing Information</button>
+                                <button onClick={() => setClick('information')} className={`btn m-2 ${(click === "information") ? "btn-warning" : "btn-outline-info"} me-3`}>Billing Information</button>
 
-                                <button onClick={() => setClick('plan')} className={`btn ${(click === "plan") ? "btn-warning" : "btn-outline-info"} me-3`}>Plan</button>
+                                <button onClick={() => setClick('plan')} className={`btn m-2 ${(click === "plan") ? "btn-warning" : "btn-outline-info"} me-3`}>Plan</button>
                             </Col>
                         </Row>
                         <div className='billing-content'>

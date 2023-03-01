@@ -4,7 +4,7 @@ const TeamCard = ({ cardData }) => {
     return (
         cardData.map(card => (
             <div className="col-md-6">
-            <Card className="bg-light">
+            <Card className="bg-light m-2">
                 <Card.Body>
                     <Card.Title className="text-muted">{ card.heading }</Card.Title>
                     <Card.Text>

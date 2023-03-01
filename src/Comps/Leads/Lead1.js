@@ -64,17 +64,17 @@ const Lead1 = () => {
                         <Row>
                             <div className="col-12">
                                 <div className="clearfix">
-                                    <button className="btn btn-warning me-3">Leads</button>
+                                    <button className="btn btn-warning m-2">Leads</button>
                                     <button className="btn btn-outline-info">Waiting List</button>
-                                    <button className="float-end btn btn-outline-info" onClick={handleShow}><i className="fa fa-bars"></i></button>
+                                    <button className="float-end btn btn-outline-info m-2" onClick={handleShow}><i className="fa fa-bars"></i></button>
                                 </div>
                             </div>
 
                             <div className="col-12 pt-4">
                                 <div className="d-flex justify-content-between">
                                     <div className="btns-wrapper">
-                                        <button className="btn btn-outline-info mb-1 me-3"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
-                                        <button className="btn btn-outline-info"><i className="fa fa-user me-2"></i>Add By</button>
+                                        <button className="btn btn-outline-info mb-1 me-3"><i className="fa fa-filter m-2 text-muted"></i>Sort By</button>
+                                        <button className="btn btn-outline-info"><i className="fa fa-user m-2"></i>Add By</button>
                                     </div>
 
                                     <div className="search-input-wrapper">
@@ -92,15 +92,15 @@ const Lead1 = () => {
                                 </div>
                                 <div className="d-flex justify-content-between">
                                     <div className="btns-wrapper">
-                                        <h4 className="fw-bold d-inline me-3">1234 Leads</h4>
+                                        <h4 className="fw-bold d-inline m-3">1234 Leads</h4>
                                         <button className="btn btn-outline-info me-3"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
-                                        <button className="btn btn-outline-info"><i className="fa fa-user me-2"></i>Add By</button>
+                                        <button className="btn btn-outline-info"><i className="fa fa-user m-2"></i>Add By</button>
                                     </div>
 
                                     <div className="">
                                         <div className="">
-                                            <button className="btn btn-outline-info me-2"><i className="fa fa-table"></i></button>
-                                            <button className="btn btn-warning">
+                                            <button className="btn btn-outline-info m-2"><i className="fa fa-table"></i></button>
+                                            <button className="btn btn-warning m-2">
                                                 <select className="form-select form-select-sm border-0 btn-warning export-all-sel">
                                                     <option selected>Export All</option>
                                                     <option><i className="fa fa-file-pdf me-1"></i>Export to pdf</option>

@@ -71,8 +71,8 @@ const Lead2 = () => {
                             <div className="col-12 pt-4">
                                 <div className="d-flex justify-content-between">
                                     <div className="btns-wrapper">
-                                        <button className="btn btn-outline-info mb-1 me-3"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
-                                        <button className="btn btn-outline-info"><i className="fa fa-user me-2"></i>Add By</button>
+                                        <button className="btn btn-outline-info m-2 me-3"><i className="fa fa-filter me-2 text-muted"></i>Sort By</button>
+                                        <button className="btn btn-outline-info m-2"><i className="fa fa-user me-2"></i>Add By</button>
                                     </div>
 
                                     <div className="search-input-wrapper">
