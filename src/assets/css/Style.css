@@ -999,6 +999,9 @@ accent-color: var(--orange-color);
         font-size: 0.7rem;
         padding: 0.50rem;
     }
+    #mem-lead-info .right-side{
+        padding: 0;
+    }
 }
 
 /* dark mode  */

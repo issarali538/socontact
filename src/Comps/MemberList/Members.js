@@ -36,22 +36,22 @@ const MemberProfile = () => {
                 <Card className="tabs-card">
                     <Card.Body>
                         <div className="d-flex justify-content-between">
-                            <Button variant="outline-info" >
+                            <Button variant="outline-info m-1" >
                                 <i className="fa-regular fa-envelope"></i>
                             </Button>
-                            <Button variant="outline-info" >
+                            <Button variant="outline-info m-1" >
                                 <i className="fa fa-pen"></i>
                             </Button>
-                            <Button variant="outline-info" >
+                            <Button variant="outline-info m-1" >
                                 <i className="fa fa-calendar"></i>
                             </Button>
-                            <Button variant="outline-info" >
+                            <Button variant="outline-info m-1" >
                                 <i className="fa fa-download"></i>
                             </Button>
-                            <Button variant="outline-info" >
+                            <Button variant="outline-info m-1" >
                                 <i className="fa fa-phone"></i>
                             </Button>
-                            <Button variant="outline-info tab-btn-active" >
+                            <Button variant="outline-info tab-btn-active m-1" >
                                 <i className="fa-regular fa-trash-can"></i>
                             </Button>
                         </div>
